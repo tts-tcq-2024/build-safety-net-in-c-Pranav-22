@@ -4,6 +4,7 @@
 #include "Soundex.h"
 #include <ctype.h>
 #include <string.h>
+
 char getSoundexCode(char c)
 {
     int i = 0;
@@ -37,6 +38,15 @@ char checkcode(char code,char *soundex,int sIndex)
         return 0;
     }
 }
+
+void updatesoundex(int sIndex, char *soundex)
+{
+    while (sIndex < 4)
+    {
+        soundex[sIndex++] = '0';
+    }
+}
+
 void generateSoundex(const char *name, char *soundex)
 {
     soundex[0] = toupper(name[0]);
@@ -51,11 +61,8 @@ void generateSoundex(const char *name, char *soundex)
         }
     }
 
-    while (sIndex < 4) {
-        soundex[sIndex++] = '0';
-    }
+   updatesoundex(sIndex,soundex);
 
     soundex[4] = '\0';
 }
-
 #endif // SOUNDEX_H
