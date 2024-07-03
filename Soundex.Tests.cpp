@@ -8,28 +8,28 @@ TEST(SoudexTestsuite, ReplacesConsonantsWithAppropriateDigits) {
   //ASSERT_EQ(soundex,"A200");
 }
 
-TEST(SoudexTestsuite, ReplacesConsonantsWithAppropriateDigits)
+TEST(SoudexTestsuite1, ReplacesConsonantsWithAppropriateDigits1)
 {
   char soundex[5];
   generateSoundex("X0", soundex);
 }
 
 
-TEST(SoudexTestsuite, ReplacesConsonantsWithAppropriateDigits)
+TEST(SoudexTestsuite2, ReplacesConsonantsWithAppropriateDigits2)
 {
   char soundex[5];
   generateSoundex("ZQOP", soundex);
 }
 
 
-TEST(SoudexTestsuite, ReplacesConsonantsWithAppropriateDigits)
+TEST(SoudexTestsuite3, ReplacesConsonantsWithAppropriateDigits3)
 {
   char soundex[5];
   generateSoundex("ASDSD", soundex);
 }
 
 
-TEST(SoudexTestsuite, ReplacesConsonantsWithAppropriateDigits)
+TEST(SoudexTestsuite4, ReplacesConsonantsWithAppropriateDigits4)
 {
   char soundex[5];
   generateSoundex("12345", soundex);
