@@ -5,7 +5,7 @@ TEST(SoudexTestsuite, ReplacesConsonantsWithAppropriateDigits) {
  //AAA
   char soundex[5];
   generateSoundex("AX", soundex);
-  //ASSERT_EQ(soundex,"A200");
+  EXPECT_STREQ(soundex,"A200");
 }
 
 TEST(SoudexTestsuite1, ReplacesConsonantsWithAppropriateDigits1)
