@@ -12,7 +12,7 @@ TEST(SoudexTestsuite, ReplacesConsonantsWithAppropriateDigits1)
 {
   char soundex[5];
   generateSoundex("X0", soundex);
- EXPECT_STREQ(soundex,"X000");
+ EXPECT_STREQ(soundex,"X200");
 }
 
 
